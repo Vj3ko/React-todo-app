@@ -79,17 +79,6 @@
       border-bottom: rem(1) solid var(--checkbox-color);
       transition: border-bottom 600ms ease-in-out;
 
-      //makes filtered items dissapear
-      &.disappear {
-        display: none;
-      }
-
-      //when trying to drag n drop, dragged item changes color
-      &.selected {
-        background: hsla(280, 87%, 65%, 0.1);
-        opacity: 0;
-      }
-
       //display delete button when hovered on todo item
       &:hover .todo-delete-button {
         opacity: 1;
@@ -149,6 +138,7 @@
         cursor: pointer;
         position: relative;
         max-width: 90%;
+        user-select: none;
 
         .todo-text {
           color: var(--text-color-active);
@@ -220,8 +210,12 @@
         width: rem(20);
         height: rem(20);
         background: transparent;
-        opacity: 0;
-        transition: background 600ms;
+        opacity: 1;
+        transition: background 600ms, opacity 500ms;
+
+        @include breakpoint("medium") {
+          opacity: 0
+        }
 
         &:focus {
           opacity: 1;
