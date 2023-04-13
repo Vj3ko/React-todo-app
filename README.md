@@ -24,7 +24,6 @@
 - Toggle light and dark mode
 - Drag and drop to reorder items on the list
 
-#### Thoughts
+## Author
 
-I already did this challenge but this time i decided to give it a shot with React since im learning it. It was hard but i stuck to it till the end. I am satisfied how it turned out.
-One thing is sure, React is really fun to work with !
+<p><a href="https://www.linkedin.com/in/vdizdar/"><img align="center" src="https://i.ibb.co/6Jw1g19/linkedin-icon.png" alt="LinkedIn" height="auto" width="30"/></a>&nbsp;
